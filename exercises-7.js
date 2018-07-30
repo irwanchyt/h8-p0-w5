@@ -1,13 +1,12 @@
 function hapusSimbol(str) {
   // you can only write your code here!
-  var regex = str.match(/[/\d[a-z]+/gi)
+  var regex = str.match(/[/\d[a-z]+/g)
       regex = regex.join('')
+
 
   return regex
 }
 
-// TEST CASES
-console.log(hapusSimbol('test%$4aa')); // test4aa
 console.log(hapusSimbol('devel0p3r s3j@@ati')); // devel0p3rs3jati
 console.log(hapusSimbol('ma@#k!an~')); // makan
 console.log(hapusSimbol('coding')); // coding
